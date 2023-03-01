@@ -1,0 +1,70 @@
+<!--
+    action: destino dos dados - Valor Padrão Local do Arquivo
+    method: caminho dos dados - Valor Padrão GET
+    enctype: formato/conteúdo dos dados - Valor Padrão text/plain
+-->
+<form method="POST">
+
+    <!--
+        Tags input terão dois atributos importantes - type que é tipo de dado e o outro name que o nome pelo qual o dado será recuperado no local enviado
+
+        type tem diversos ... o padrão é o text
+
+        mas text email, number, date, time, month, file, 
+    -->
+    <fieldset>
+        <legend>
+            Dados Pessoais
+        </legend>
+        <label>Nome</label>
+        <input type="text" minlength="10" name="nome">
+        <label>Idade</label>
+        <input type="number" name="idade" min="17" max="23">
+    </fieldset>
+    <fieldset>
+        <legend>
+            Endereço
+        </legend>
+        <label>Endereço</label>
+        <input type="text" maxlength="20" name="nome" placeholder="Cidade">
+        <label>Cidade</label>
+        <datalist id="cidades">
+            <option>Recife</option>
+            <option>Garanhuns</option>
+        </datalist>
+        <input type="text" maxlength="20" name="cidade" list="cidades">
+        <input type="file"  name="foto" >
+        <label >Estado</label>
+        <select name="estado">
+            <optgroup label="Nordeste">
+                <option value="ba">Bahia</option>
+                <option value="pe">Pernambuco</option>
+                <option value="al">Alagoas</option>
+            </optgroup>
+            <optgroup label="Sudeste">
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Financeiro
+        </legend>
+        <label>Cartão</label>
+        <input type="text" name="cartao">
+        <label>CPF</label>
+        <input type="text" name="cpf">
+    </fieldset>
+    <fieldset>
+        <legend>
+            Login
+        </legend>
+        <label>Senha</label>
+        <input type="text" minlength="10" name="usuario">
+        <label>Senha</label>
+        <input type="password" minlength="10" name="senha">
+    </fieldset>
+    <textarea name="biografia" cols="30" rows="10"></textarea>
+    <button>Enviar</button>
+</form>
