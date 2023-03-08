@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="icon-apple.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.93539562"
+     inkscape:cx="212.74421"
+     inkscape:cy="179.60315"
+     inkscape:window-width="1828"
+     inkscape:window-height="715"
+     inkscape:window-x="51"
+     inkscape:window-y="36"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path111"
+       style="fill:#000080;stroke-width:0.264583"
+       d="m 56.005739,45.996055 c -16.871553,2.3e-5 -30.548635,10.190105 -30.548524,24.718388 -1.11e-4,14.528282 13.676971,34.243367 30.548524,34.243387 2.528412,-0.006 5.046229,-0.28171 7.495666,-0.82165 2.449438,0.53994 4.967254,0.81594 7.495667,0.82165 16.871554,-2e-5 30.548638,-19.715105 30.548518,-34.243387 10e-6,-0.527265 -0.0203,-1.048172 -0.0558,-1.563729 a 14.70857,12.728571 0 0 1 -7.015588,1.563729 14.70857,12.728571 0 0 1 -14.708663,-12.728939 14.70857,12.728571 0 0 1 4.970756,-9.512598 c -4.130337,-1.601559 -8.79724,-2.476845 -13.739213,-2.476851 -2.51556,0.0057 -5.020683,0.278855 -7.45846,0.813387 -2.46191,-0.539793 -4.99241,-0.813032 -7.532873,-0.813387 z" />
+    <path
+       id="path299"
+       style="fill:#000080;stroke-width:0.264353"
+       d="m 76.684383,28.554486 a 7.4812242,11.85031 28.070709 0 0 -10.212431,0.03266 7.4812242,11.85031 28.070709 0 0 -5.966617,12.447489 7.4812242,11.85031 28.070709 0 0 10.207662,-0.03977 7.4812242,11.85031 28.070709 0 0 5.971386,-12.440381 z" />
+  </g>
+</svg>
