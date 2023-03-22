@@ -1,0 +1,9 @@
+span {
+  color: pink !important;
+}
+p a {
+  font-size: 50px;
+}
+[href="qualquercoisa.com"] {
+  border-bottom: 10px gray solid;
+}
