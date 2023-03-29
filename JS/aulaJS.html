@@ -1,0 +1,25 @@
+<html>
+  <p class="texto">Texto</p>
+
+  <p class="texto">Love is?</p>
+
+  <p class="texto">Big and Strong</p>
+
+  <p>
+    Where are you stydy English?
+    <a href="">Pretty</a>
+  </p>
+
+  <button onclick="alteraCor()">Altera Cor</button>
+</html>
+
+<script>
+  function alteraCor() {
+    let txt = document.getElementsByClassName("texto");
+    let i = 0;
+    //alert(txt.length);
+    for (i; i < 3; i++) {
+      txt[i].style.color = "red";
+    }
+  }
+</script>
