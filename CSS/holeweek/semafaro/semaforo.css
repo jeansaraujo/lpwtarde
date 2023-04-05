@@ -1,0 +1,60 @@
+#gabinete {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sema {
+  border-radius: 30px;
+  border: 3px black solid;
+  width: 120px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#vermelho {
+  background-color: rgba(255, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  transition: 2s;
+}
+#amarelo {
+  background-color: rgba(191, 255, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  transition: 2s;
+}
+#verde {
+  background-color: rgba(0, 255, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  transition: 2s;
+}
+#verde:hover {
+  background-color: rgb(0, 255, 0);
+  animation: sombra 1s infinite;
+}
+#vermelho:hover {
+  background-color: rgb(255, 0, 0);
+}
+#amarelo:hover {
+  background-color: yellow;
+}
+@keyframes sombra {
+  0% {
+    border-style: solid;
+    border-color: black;
+    border-spacing: 3px;
+  }
+  50% {
+    border-style: dotted;
+    border-color: black;
+    border-spacing: 3px;
+  }
+}
