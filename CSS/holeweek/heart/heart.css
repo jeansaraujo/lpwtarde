@@ -1,0 +1,20 @@
+.caixa {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#texto {
+  visibility: hidden;
+  font-size: 4em;
+}
+img:hover {
+  animation: batecoracao 0.3s infinite;
+}
+
+@keyframes batecoracao {
+  0% {
+    width: 50%;
+  }
+}

@@ -1,0 +1,47 @@
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #cx1 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 20px red solid;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.3;
+  }
+  #cx2 {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+  }
+
+  #cx1:hover {
+    animation: rodando 0.5s infinite;
+  }
+  @keyframes rodando {
+    0% {
+      border-bottom-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    50% {
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 00px;
+      border-top-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+  }
+</style>
+
+<div id="cx1">
+  <div id="cx2"></div>
+</div>

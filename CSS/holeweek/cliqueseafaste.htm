@@ -1,0 +1,32 @@
+<style>
+  div {
+    border-radius: 10px;
+    width: 6em;
+    border: 2px black solid;
+    padding: 10px 5px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    font-size: 3em;
+    text-align: center;
+  }
+</style>
+<div id="divcurtida" onclick="volta();" onmouseover="curtiu()">0 curtida</div>
+
+<script>
+  let contador = 0;
+  let pesquerda = 40;
+  let btn = document.getElementById("divcurtida");
+  function curtiu() {
+    contador += 1;
+    btn.innerHTML = contador + " curtidas";
+    pesquerda += 5;
+    btn.style.left = pesquerda + "%";
+  }
+  function volta() {
+    btn.style.left = "40%";
+    contador = 0;
+    pesquerda = 40;
+    btn.innerHTML = contador + " curtida";
+  }
+</script>

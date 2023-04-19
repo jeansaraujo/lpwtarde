@@ -1,0 +1,29 @@
+#casca {
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  width: 20%;
+  height: 50%;
+  margin: auto;
+  border: 2px black solid;
+}
+#resultado {
+  display: block;
+  height: 10%;
+  border-bottom: 2px gray double;
+}
+.nro {
+  height: 10%;
+  width: 10%;
+  border: 1px solid black;
+  padding: 5px;
+}
+.numeros {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.op {
+  height: 10%;
+  width: 10%;
+}
