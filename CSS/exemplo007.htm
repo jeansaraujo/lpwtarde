@@ -1,0 +1,32 @@
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #caixa01 {
+    height: 300px;
+    width: 250px;
+    background-image: url("imagens/cowboy.png");
+    background-size: cover;
+    transition: 5s;
+  }
+  #caixa01:hover {
+    height: 300px;
+    transform: rotate(-90deg);
+    transform-origin: 300 0;
+  }
+  #circulo {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    top: 30px;
+    left: 30px;
+  }
+</style>
+
+<div id="caixa01">
+  <div id="circulo"></div>
+</div>

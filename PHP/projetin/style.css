@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  min-height: 300px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 5px gray;
+}
+input {
+  width: 100%;
+  font-size: 1.5em;
+}
+label {
+  border-right: 1px gray double;
+  margin-bottom: 5px;
+  padding-right: 5px;
+  font-size: 1.5em;
+}
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  float: right;
+  margin-right: 30px;
+}
+h1 {
+  border-left: gray 5px solid;
+  padding-left: 10px;
+}
+sup {
+  color: red;
+  animation: pisca 1s infinite;
+  font-size: 0.5em;
+}
+#msg {
+  background-color: rgba(255, 0, 0, 0.8);
+  text-align: center;
+  display: block;
+  font-size: 1.5em;
+}
+.cmenu {
+  border: 3px gray solid;
+  border-radius: 10px;
+  padding: 1px;
+  text-align: center;
+}
+@keyframes pisca {
+  0% {
+    color: yellow;
+  }
+}
