@@ -7,7 +7,7 @@
         Lista de Candidatos
     </h4>
     <?php
-        $conexao = new PDO("mysql:host=localhost;dbname=lpwt","root","");
+        $conexao = new PDO("mysql:host=localhost;dbname=lpwt","root","123456");
         $consulta = $conexao->PREPARE("SELECT * from candidatos");
         $consulta->execute();
         $resultado = $consulta->fetchAll(PDO::FETCH_ASSOC);
