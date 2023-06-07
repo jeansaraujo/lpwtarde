@@ -53,7 +53,7 @@
 <?php
     if(isset($_POST["dtNascimento"])){
         if($idade > 14 && $idade < 25){
-            $conexao = new PDO("mysql:host=localhost;dbname=lpwt","root","123456");
+            $conexao = new PDO("mysql:host=localhost;dbname=lpwt","root","ifpe");
             $inserir = $conexao->prepare("INSERT INTO candidatos(nome,email,senha,dtNascimento) VALUES (:NOME,:EMAIL,:SENHA,:NASCIMENTO)");
             $nome = isset($_POST["nome"])?$_POST["nome"]:"";
             $email = isset($_POST["email"])?$_POST["email"]:"";

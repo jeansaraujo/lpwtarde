@@ -20,7 +20,7 @@
         if($acao == "login"){
             $email = isset($_POST["email"])?$_POST["email"]:"";
             $senha = isset($_POST["senha"])?$_POST["senha"]:"";
-            $conexao = new PDO("mysql:host=localhost;dbname=lpwt","root","123456");
+            $conexao = new PDO("mysql:host=localhost;dbname=lpwt","root","ifpe");
             $pesquisa = $conexao->PREPARE("SELECT senha FROM candidatos WHERE email = :EMAIL");
             $pesquisa->bindParam(":EMAIL",$email);
             $pesquisa->execute();
