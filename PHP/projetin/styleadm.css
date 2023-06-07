@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+}
+h1 {
+  border-left: 5px gray solid;
+  text-align: center;
+}
+header {
+  height: 20vh;
+}
+#menu {
+  width: 10%;
+  height: 60vh;
+  border-right: gray solid 5px;
+}
+main {
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer {
+  height: 10vh;
+  background-color: darkgray;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}

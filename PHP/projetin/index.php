@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="style.css">
 <body>
-    
     <?php
         if(isset($_SESSION["usuario"])){
             print "usuario Logado";

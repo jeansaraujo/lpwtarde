@@ -26,9 +26,10 @@
             $pesquisa->execute();
             $password = $pesquisa->fetchAll(PDO::FETCH_ASSOC);
             if($senha == $password[0]["senha"]){
-                print "Acesso Area Administrativa";
                 session_start();
+                print PHP_SESSION_ACTIVE;
                 $_SESSION["usuario"]=$email;
+                header("Location:http://localhost/ifpe2023lpwtarde/PHP/projetin/admin.php");            
             }
             else{
                 print "Usuário/Senha Incorreta";
