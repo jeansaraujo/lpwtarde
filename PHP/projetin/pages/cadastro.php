@@ -33,6 +33,10 @@
             </label>
             <input type="email" name="email">
             <label>
+                Senha
+            </label>
+            <input type="password" name="senha">
+            <label>
                 Nascimento
             </label>
             <input type="date" name="dtNascimento">
@@ -50,12 +54,14 @@
     if(isset($_POST["dtNascimento"])){
         if($idade > 14 && $idade < 25){
             $conexao = new PDO("mysql:host=localhost;dbname=lpwt","root","123456");
-            $inserir = $conexao->prepare("INSERT INTO candidatos(nome,email,dtNascimento) VALUES (:NOME,:EMAIL,:NASCIMENTO)");
+            $inserir = $conexao->prepare("INSERT INTO candidatos(nome,email,senha,dtNascimento) VALUES (:NOME,:EMAIL,:SENHA,:NASCIMENTO)");
             $nome = isset($_POST["nome"])?$_POST["nome"]:"";
             $email = isset($_POST["email"])?$_POST["email"]:"";
+            $senha = isset($_POST["senha"])?$_POST["senha"]:"";
             $nascimento = isset($_POST["dtNascimento"])?$_POST["dtNascimento"]:"";
             $inserir->bindParam(":NOME",$nome);
             $inserir->bindParam(":EMAIL",$email);
+            $inserir->bindParam(":SENHA",$senha);
             $inserir->bindParam(":NASCIMENTO",$nascimento);            
             //print $nome." - ".$email." - ".$nascimento;
             $resultado= $inserir->execute();

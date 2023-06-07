@@ -11,6 +11,7 @@
         <a class="cmenu" href="?pagina=home">Home</a>
         <a class="cmenu" href="?pagina=cadastro">Cadastro</a> 
         <a class="cmenu" href="?pagina=lista">Lista</a>
-        
+        <a class="cmenu login" href="?pagina=login">Login</a>        
     </div>
+
 </div>

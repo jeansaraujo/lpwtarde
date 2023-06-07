@@ -1,6 +1,11 @@
 <link rel="stylesheet" href="style.css">
 <body>
+    
     <?php
+        if(isset($_SESSION["usuario"])){
+            print "usuario Logado";
+            print $_SESSION["usuario"];     
+        }
         if(isset($_GET['pagina'])){
             $pagina = $_GET['pagina'];
             switch($pagina){
@@ -12,6 +17,9 @@
                     break;
                 case "lista":
                     include("pages/lista.php");
+                    break;
+                case "login":
+                    include("pages/login.php");
                     break;
                 default:
                     include("pages/home.php");
