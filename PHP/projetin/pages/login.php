@@ -24,10 +24,14 @@
             $pesquisa = $conexao->PREPARE("SELECT senha FROM candidatos WHERE email = :EMAIL");
             $pesquisa->bindParam(":EMAIL",$email);
             $pesquisa->execute();
-            $senha = $pesquisa->fetchAll(PDO::FETCH_ASSOC);
-            if($senha == $senha[0]["senha"]){
+            $password = $pesquisa->fetchAll(PDO::FETCH_ASSOC);
+            if($senha == $password[0]["senha"]){
+                print "Acesso Area Administrativa";
                 session_start();
                 $_SESSION["usuario"]=$email;
+            }
+            else{
+                print "Usuário/Senha Incorreta";
             }            
         }
     }
