@@ -34,7 +34,7 @@
 <?php
     if(isset($_GET["excluir"])){
         $excluir=$_GET["excluir"];
-        $conexao = new PDO("mysql:host=localhost;dbname=lpwt","root","");
+        $conexao = new PDO("mysql:host=localhost;dbname=lpwt","root","ifpe");
         $deletar = $conexao->PREPARE("delete from candidatos where id=:ID");
         $deletar->bindParam(":ID",$excluir);
         $deletar->execute();
