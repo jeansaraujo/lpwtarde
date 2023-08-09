@@ -1,3 +1,4 @@
+    
     <div>
         <h2 style="text-align:right">
             Acesso Privado
@@ -27,8 +28,8 @@
             $password = $pesquisa->fetchAll(PDO::FETCH_ASSOC);
             if($senha == $password[0]["senha"]){
                 session_start();
-                print PHP_SESSION_ACTIVE;
-                $_SESSION["usuario"]=$email;
+                $_SESSION["email"]=$email;
+                $_SESSION["login"]=true;                
                 header("Location:http://localhost/ifpe2023lpwtarde/PHP/projetin/admin.php");            
             }
             else{

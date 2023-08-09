@@ -21,7 +21,7 @@
                     include("pages/login.php");
                     break;
                 default:
-                    include("pages/home.php");
+                    include("admin.php");
                     break;
             }
         }

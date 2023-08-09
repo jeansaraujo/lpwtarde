@@ -8,11 +8,7 @@ h1 {
 header {
   height: 20vh;
 }
-#menu {
-  width: 10%;
-  height: 60vh;
-  border-right: gray solid 5px;
-}
+
 main {
   height: 70vh;
   display: flex;
