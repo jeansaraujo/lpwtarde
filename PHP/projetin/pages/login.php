@@ -1,5 +1,8 @@
     
     <div>
+        <h3 style="text-align:right">
+            <a href="?pagina=home">De volta ao Amor</a>            
+        </h3>
         <h2 style="text-align:right">
             Acesso Privado
         </h2>
