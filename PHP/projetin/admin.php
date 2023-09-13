@@ -2,102 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admistração - Acesso Restrito</title>
-    <link rel="stylesheet" href="styleadm.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <title>Document</title>
 </head>
-<style>
-    footer{
-        background-color: darkgray;
-        color:white
-        display:black;
-    }
-    #btn_sair{
-        border: 2px black solid;
-        padding: 5px;
-        border-radius: 10px;
-        float: right;
-        margin-right: 30px;
-    }
-    #btn_sair:hover{
-        border: 2px black double;
-        background-color: darkgray;
-        color:white;
-        border-radius: 10px;
-        transition: 5s;
-    }
-    #menu {
-    width: 10%;
-    height: 60vh;
-    border-right: gray solid 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    }
-
-    #menu a {
-    border: 2px darkgray dotted;
-    padding: 5px;
-    color: red !important;
-    margin-right: 10px;
-    text-align: center;
-    }
-
-</style>
-<?php
-    session_start();
-?>
-
 <body>
-    <?php
-        if(isset($_SESSION["email"])){
-    ?>
-    <header>
-        <h1>
-            Área Administrativa
-        </h1>
-        <p>
-            <a id="btn_sair" href="?acao=logout">LOGOUT</a>
-        </p>
-    </header>
-    <main>
-        <session id="menu">
-            <a href="">menu 1</a><a href="">menu 2</a><a href="">menu 3</a><a href="">menu 4</a>
-        </session>
-        <session id="conteudo">
-                <p>
-                    Informações
-                </p>
-                <p>
-                    
-                </p>
-        </session>
-    </main>
-    <footer>
-        <p>
-            Desenvolvimendo pela turma mais love dos IFs
-        </p>
-    </footer>
-    <?php
-        }
-        else{
-            print   " <script>
-                        alert('Usuário não logado');
-                      </script>
-                    ";
-                    //header("Location:http://localhost/ifpe2023lpwtarde/PHP/projetin/index.php");            
-        }
-    ?>
-  
- </body>
+    <div style="height:100vh;"class="w-100 d-flex flex-column justify-content-center align-items-center">
+        <button class="btn btn-primary">
+        Enviar
+    </button>  
+    <div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class ="img-fluid" src="https://saborecia.com.br/wp-content/uploads/2020/08/MG_4421-scaled.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class ="img-fluid" src="https://delicious.com.br/wp-content/uploads/2020/10/DSC00080.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class ="img-fluid" src="https://cdn0.casamentos.com.br/vendor/8920/3_2/640/jpg/opcoes-de-doces-para-substituir-o-bem-casado-pao-de-mel-para-casamentos_13_268920-158169604631284.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+    
+</body>
 </html>
-
-
-<?php
-    if(isset($_GET["acao"])=="logout"){
-        unset($_SESSION["email"]);
-        session_destroy();
-        header("Location:http://localhost/ifpe2023lpwtarde/PHP/projetin/index.php");            
-    }
-?>

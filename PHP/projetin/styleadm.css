@@ -8,17 +8,9 @@ h1 {
 header {
   height: 20vh;
 }
-
 main {
   height: 70vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-footer {
-  height: 10vh;
-  background-color: darkgray;
-  color: white;
-  text-align: center;
-  padding-top: 10px;
 }
