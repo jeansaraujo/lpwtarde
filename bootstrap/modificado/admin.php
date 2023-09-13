@@ -130,10 +130,42 @@
           </div>
         </nav>
       </div>
+      <style>
+        #fichafuncional{
+         width: 75vw;
+         min-height: 70vh;
+         border: 1px gray solid; 
+         margin-left: 5%
+        }
+      </style>
 
       <div id="layoutSidenav_content">
         <main>
-          <h1>Painel Principal</h1>
+          <div class="row">
+            <div class="col-3">
+                 <h2>Painel Principal</h2>  
+            </div>
+            <div class="col-8">
+              <form>
+                  <div class="col-5">
+                    <input class="form-control" name="matricula" type="text">                    
+                  </div>
+                  <div class="col-5">
+                    <button class="btn btn-outline-primary">Buscar</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+
+          <div id="fichafuncional">
+            <?php
+                if(isset($_GET["matricula"])){
+                  $curriculo = "curriculo/".$_GET["matricula"].".html";
+                  include_once($curriculo);
+                }
+            ?>
+          </div>
+            
         </main>
         <footer class="py-4 bg-light mt-auto">
           <div class="container-fluid px-4">
