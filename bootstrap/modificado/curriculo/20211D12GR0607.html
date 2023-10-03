@@ -1,20 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>Meu Currículo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #343a40;
+        }
+        
+        a {
+            color: #FFF;
+            
+        }
+
+        a:hover {
+            color: #46617c83 ;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 90px;
+        }
+
+        .info {
+            text-align: left;  
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1 class = "texer-center text-primary">  
-        Curriculo
-    </h1>
-    <h2 class="texer-end texer-danger"> Wsiel Klewerton Pereira Constantino
+    <div class="container">
+        <div class="header text-center">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="https://i0.statig.com.br/bancodeimagens/ba/0b/c6/ba0bc6dwusx69cydtycu26f5f.jpg" alt="é bom dimaizi" width="100px" height="100px">
+                </div>
+                <div class="col-md-10 info">
+                    <div class="teste">
+                        <h1>Wsiel Klewerton Pereira Constantino</h1>
+                        <p><a href="mailto:wkpc@discente.ifpe.edu.br">wkpc@discente.ifpe.edu.br</a></p>
+                        <p>Telefone: (87) 98128-3101</p>
+                        <p>Endereço: Rua Cícero José Rodriguês, Parque Alvorada - Nº 180</p>
 
-    </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="section">
+            <h2>Resumo</h2>
+            <p>Profissional altamente motivado e dedicado com ampla experiência em programação. Sou conhecido por trabalhar bem em equipe e ter um uma boa comunicação com meus colegas de trabalho.</p>
+        </div>
+
+        <div class="section">
+            <h2>Competências</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Java</h3>
+                    <p>Possuo conhecimento basico na linguagem Java.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Python</h3>
+                    <p>Possuo conhecimento basico na linguagem Python.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Formação Acadêmica</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Dom Juvencio de Britto</h3>
+                    <p>Curso: Ensino Fundamental</p>
+                    <p>Período: 2016 - 2020</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>IFPE - Campus Garanhuns</h3>
+                    <p>Curso: Técnico em Informática</p>
+                    <p>Período: 2021 - Cursando</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-</script>
 </html>
