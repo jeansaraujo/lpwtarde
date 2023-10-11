@@ -1,0 +1,74 @@
+/* Estilo global */
+body {
+    background-color: #8c8c8c;
+    font-family: 'Gabarito', cursive;
+}
+
+.container {
+    background-color: #d6d6d6;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+/* Teu nome */
+h1 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Coisas pessoais */
+p {
+    color: #555;
+    margin-bottom: 1px;
+}
+
+/* Subtitulos */
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Botoes NavBar */
+ul {
+    margin-top: 0;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+/* NavBar */
+.navbar-lateral {
+    background-color: #515151;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    padding-top: 20px;
+    border-right: 3px solid #ffd000 ;
+}
+
+/* Links NavBar */
+.navbar-lateral a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+/* links NavBar ativos */
+.navbar-lateral a:hover {
+    background-color: #555;
+    align-items: center;
+}
+
+
+.img1 {
+    border-radius: 20%;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 200px;
+    height: auto;
+}
