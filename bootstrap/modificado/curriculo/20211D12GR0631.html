@@ -3,13 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curriculo HTML</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
 </head>
-<body>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        list-style: none;
+    }
+    body{
+        width: 100%;
+        color: #069;
+        text-align:center ;
+        min-height:100vh ;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 70%;
+        overflow-y: scroll;
+        height: 90vh;
+        padding: 15px 2%;
+        box-shadow: 0 0 10px #069;
 
-    <h1 class="text-center text-primary background-secondary">Curriculo</h1>
-    <h2 class="text-end text-danger pd-3">Ronald da Silva Noronha</h2>
+    }
+    .container::-webkit-scrollbar{
+        width: 14px;
+        border: 1px solid #069;
+    }
+    .container::-webkit-scrollbar-thumb{
+        background-color: #069;
+        border-radius: 6px;
+    }
+    .hr_dados1{
+        border-top:medium dashed #069;
+        border-bottom:medium dashed #069 ;
+        height: 10px;
+        overflow: visible;
+        padding: 0;
+        text-align: center;
+    }
+    .hr_dados1::after{
+        
+        content: "RONALD DA SILVA NORONHA" ;
+        font-size: 1.4em;
+        padding: 0 0.3em;
+        top: -0.7em;
+        background: #fff;
+        display: inline;
+        position: relative;
+    }
+    .hr_01{
+        border-top: medium dashed #069;
+        border-bottom: medium dashed #069;
+        height: 10px;
+        overflow:visible;
+        padding:0;
+        text-align: center;
+    }
+    .hr_01::after{
+        content: 'Objetivo';
+        position: relative;
+        top: -0.7em ;
+        font-size: 1.4em;
+        background-color: #fff;
+        display: inline;
+        padding: 0 0.3em;
+    }
+    .hr_02{
+        border-top: medium dashed #069;
+        border-bottom: medium dashed #069;
+        height: 10px;
+        overflow:visible;
+        padding:0;
+        text-align: center;
+    }
+    .hr_02::after{
+        content: 'Resumo';
+        position: relative;
+        top: -0.7em ;
+        font-size: 1.4em;
+        background-color: #fff;
+        display: inline;
+        padding: 0 0.3em;
+    }
+    .hr_03{
+        border-top: medium dashed #069;
+        border-bottom: medium dashed #069;
+        height: 10px;
+        overflow:visible;
+        padding:0;
+        text-align: center;
+    }
+    .hr_03::after{
+        content: 'Formação Acadêmica';
+        position: relative;
+        top: -0.7em ;
+        font-size: 1.4em;
+        background-color: #fff;
+        display: inline;
+        padding: 0 0.3em;
+    }
+    .hr_04{
+        border-top: medium dashed #069;
+        border-bottom: medium dashed #069;
+        height: 10px;
+        overflow:visible;
+        padding:0;
+        text-align: center;
+    }
+    .hr_04::after{
+        content: 'Experiência';
+        position: relative;
+        top: -0.7em ;
+        font-size: 1.4em;
+        background-color: #fff;
+        display: inline;
+        padding: 0 0.3em;
+    }
+    .hr_05{
+        border-top: medium dashed #069;
+        border-bottom: medium dashed #069;
+        height: 10px;
+        overflow:visible;
+        padding:0;
+        text-align: center;
+    }
+    .hr_05::after{
+        content: 'Ferramentas';
+        position: relative;
+        top: -0.7em ;
+        font-size: 1.4em;
+        background-color: #fff;
+        display: inline;
+        padding: 0 0.3em;
+    }
+    .hr_06{
+        border-top: medium dashed #069;
+        border-bottom: medium dashed #069;
+        height: 10px;
+        overflow:visible;
+        padding:0;
+        text-align: center;
+    }
+    .hr_06::after{
+        content: 'Idiomas';
+        position: relative;
+        top: -0.7em ;
+        font-size: 1.4em;
+        background-color: #fff;
+        display: inline;
+        padding: 0 0.3em;
+    }
+    .hr_07{
+        border-top: medium dashed #069;
+        border-bottom: medium dashed #069;
+        height: 10px;
+        overflow:visible;
+        padding:0;
+        text-align: center;
+    }
+    .hr_07::after{
+        content: 'Linguagens';
+        position: relative;
+        top: -0.7em ;
+        font-size: 1.4em;
+        background-color: #fff;
+        display: inline;
+        padding: 0 0.3em;
+    }
+    .hr_08{
+        border-top: medium dashed #069;
+        border-bottom: medium dashed #069;
+        height: 10px;
+        overflow:visible;
+        padding:0;
+        text-align: center;
+    }
+    .hr_08::after{
+        content: 'Redes Sociais';
+        position: relative;
+        top: -0.7em ;
+        font-size: 1.4em;
+        background-color: #fff;
+        display: inline;
+        padding: 0 0.3em;
+    }
+    .fab{
+        cursor: pointer;
+        margin: 5px;
+        max-height: 100%;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .fab:hover{
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        transform: scale(1.5);
+        color: #000;
+    }
+
+</style>
+<body>
+    <div class="container"><br><br>
+        <hr class="hr_dados1"><br><br>
+        <img src ="https://tntsports.com.br/__export/1661539002069/sites/esporteinterativo/img/2022/08/26/cristiano-ronaldo-cr76-gettyimages-1417091696.jpg" alt="ronald" width="200" height="250">
+        
+        <h3> Idade: 18 anos, Sexo: Masculino</h3>
+        <h3>Endereço: Rua manoel luis de frança,55299-425,Guns,Pe</h3>
+        <h3>Contato: (87)98132-6301</h3>
+        <h3>email: rsn10@discente.ifpe.edu</h3><br>
+        <hr class="hr_01"><br>
+        <h3>
+            Colabora com a equipe e busca os melhores resultado aplicando meus conhecimentos desenvolvido com Professor jean
+        </h3><br><br>
+        <hr class="hr_02">
+        <h3>
+            Profissional altamente motivado e dedicado com ampla experiência em programação. liderei grandes projetos  
+        </h3><br>
+        <hr class="hr_03">
+        <h3>fundamental-  concluido no colegio aderbal Jurema(2017-2020)
+        </h3>
+        <h4>ensino medio integrado (cursando T.I) - cursando no IFPE-CAMPUS GARANHUNS(2021-2024)</h4>
+        <h5> curso da fgv em segurança cibernética</h5><br>
+        <hr class="hr_04">
+        <h3>Supervisão e tomada de Decisão;
+                Liderança;
+                Trabalho em equipe;
+                Bom ouvinte;
+        </h3><br>
+        <hr class="hr_05">
+       
+            <ul>
+                <li>Microsoft visiua 
+                    Studio code,Github e git
+                </li>
+                <li>
+                    Gerenciamento de Equipe
+                </li>
+            </ul><br>
+        <hr class="hr_06">
+        <h3>Ingles básico</h3><br><br>
+        <hr class="hr_07">
+        <ul>
+            <li>
+                Html,css e Php
+            </li>
+            <li>
+               Python, java e JavaScrip
+            </li>
+            <li>
+                SQL -Mysql e SQL serve
+            </li>
+        </ul><br>
+        <hr class="hr_08">
+        <div class="font">
+            <h5>Compartilhar:</h5>
+            <i class="fab
+            fa-instagram"style="font-size:35px;"></i>
+            <a href="https://github.com/ronaldnoronha0"> 
+                <i class="fab fa-Github"style="font-size:35px;"></i>
+            </a>
+            <i class="fab
+            fa-Whatsapp"style="font-size:35px;"></i>
+            
+
+        </div><br>
+
+
+
+
+
+        
+    </div>
+
+   
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>
